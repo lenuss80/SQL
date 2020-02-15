@@ -12,7 +12,7 @@ INSERT INTO ASIGNATURAS(codigo,descripcion,creditos,creditosp) VALUES
     ("PC","Programación concurrente",6.0,1.5)
 ;
 
-INSERT INTO IMPARTE(dni,asignaturas) VALUES
+INSERT INTO IMPARTE(dni,asignatura) VALUES
     ("21111222","DGBD"),
     ("21111222","FBD"),
     ("21333444","PC")
