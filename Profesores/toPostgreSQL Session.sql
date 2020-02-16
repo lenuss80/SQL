@@ -1,1 +1,1 @@
-Select * From *;
+Select * From profesores;

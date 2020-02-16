@@ -1,3 +1,4 @@
+DROP TABLE PROFESORES, ASIGNATURAS, IMPARTE;
 CREATE TABLE PROFESORES(
     dni VARCHAR(10),
     nombre VARCHAR(40),
@@ -10,8 +11,8 @@ CREATE TABLE PROFESORES(
 CREATE TABLE ASIGNATURAS(
     codigo VARCHAR(5),
     descripcion VARCHAR(35),
-    creditos DECIMAL(3,1),
-    creditosp DECIMAL(3,1),
+    creditos DECIMAL(4,1),
+    creditosp DECIMAL(4,1),
 
     CONSTRAINT PK_ASIGNATURAS PRIMARY KEY(codigo)
 );
