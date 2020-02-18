@@ -1,0 +1,15 @@
+--a-SELECT * FROM PROFESORES;
+--b-SELECT categoria FROM PROFESORES;
+--c-SELECT DISTINCT categoria FROM PROFESORES;
+--d-SELECT nombre FROM PROFESORES WHERE categoria='TEU';
+--e-SELECT nombre FROM PROFESORES WHERE categoria='TEU' OR categoria='ASO6';
+--f-SELECT descripcion FROM ASIGNATURAS WHERE creditosp IS NULL;
+--g-SELECT creditos, descripcion FROM ASIGNATURAS WHERE creditos BETWEEN 5 AND 8;
+--h-SELECT descripcion FROM ASIGNATURAS WHERE codigo='FBD' OR codigo='DGBD';
+--y-SELECT nombre FROM PROFESORES AS prof, IMPARTE AS imp WHERE prof.dni=imp.dni AND NOT imp.asignatura='HI' OR imp.asignatura='FBD' OR imp.asignatura='DGBD';
+--j-SELECT * FROM PROFESORES WHERE nombre LIKE 'Rafa%';
+--k-SELECT codigo FROM ASIGNATURAS WHERE descripcion LIKE '%BASES DE DATOS%';
+--l-SELECT codigo FROM ASIGNATURAS WHERE codigo LIKE '__';
+--m-SELECT descripcion FROM ASIGNATURAS WHERE descripcion LIKE '%INFORMATIC_';
+--n-SELECT descripcion, creditos FROM ASIGNATURAS WHERE creditos=(SELECT MIN(creditos) FROM ASIGNATURAS);
+--SELECT * FROM ASIGNATURAS WHERE creditos=(SELECT creditos FROM ASIGNATURAS WHERE codigo='HI');
